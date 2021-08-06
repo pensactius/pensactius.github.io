@@ -1,18 +1,127 @@
 <!DOCTYPE html>
-<html class="amb-html">
-  <head>
-    <link rel=stylesheet href="amb-styles.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+	<meta charset="utf-8">
+	<title>PensActius Maker Space</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style type="text/css">		
+		.w3-theme-l5 {color:#000 !important; background-color:#f0f4f8 !important}
+		.w3-theme-l4 {color:#000 !important; background-color:#cddbe7 !important}
+		.w3-theme-l3 {color:#000 !important; background-color:#9bb7d0 !important}
+		.w3-theme-l2 {color:#fff !important; background-color:#6993b8 !important}
+		.w3-theme-l1 {color:#fff !important; background-color:#456f93 !important}
+		.w3-theme-d1 {color:#fff !important; background-color:#294257 !important}
+		.w3-theme-d2 {color:#fff !important; background-color:#253a4e !important}
+		.w3-theme-d3 {color:#fff !important; background-color:#203344 !important}
+		.w3-theme-d4 {color:#fff !important; background-color:#1b2c3a !important}
+		.w3-theme-d5 {color:#fff !important; background-color:#172531 !important}
+		
+		.w3-theme-light {color:#000 !important; background-color:#f0f4f8 !important}
+		.w3-theme-dark {color:#fff !important; background-color:#172531 !important}
+		.w3-theme-action {color:#fff !important; background-color:#172531 !important}
+		
+		.w3-theme {color:#fff !important; background-color:#2e4a62 !important}
+		.w3-text-theme {color:#2e4a62 !important}
+		.w3-border-theme {border-color:#2e4a62 !important}
+		
+		.w3-hover-theme:hover {color:#fff !important; background-color:#2e4a62 !important}
+		.w3-hover-text-theme:hover {color:#2e4a62 !important}
+		.w3-hover-border-theme:hover {border-color:#2e4a62 !important}
 
-    <title>PensActius Maker Space</title>
+		body {font-family: "Times New Roman", Georgia, serif; color:#000 !important; background-color:#f0f4f8 !important}
+	</style>
+<body>
 
-  </head>
+	<!-- Navigation (Sits on top) -->
+	<div class="w3-top">
+		<div class="w3-bar w3-theme-light w3-padding- w3-card">
+			<a href="#" class="w3-bar-item w3-button w3-hover-theme">Inicio</a>
+			<a href="#" class="w3-bar-item w3-button w3-hover-theme">Talleres</a>
+			<a href="#" class="w3-bar-item w3-button w3-hover-theme">Espacio Fablab</a>
+			<a href="#" class="w3-bar-item w3-button w3-hover-theme">Acerca</a>		
+			<div class="w3-dropdown-hover w3-right">
+				<button class="w3-button w3-hover-theme">Recursos</button>	
+				<div class="w3-dropdown-content w3-bar-block w3-card-4" style="right:0">
+					<a href="https://github.com/pensactius/tutoriales" class="w3-bar-item w3-button w3-theme-light w3-hover-theme" target="_blank">
+						Tutoriales en Github
+					</a>
+					<a href="https://www.youtube.com/channel/UCIXZ1Khrw78XszPj-PbuC5g" class="w3-bar-item w3-button w3-theme-light w3-hover-theme"target="_blank">
+						Youtube
+					</a>
+					<a href="https://drive.google.com/drive/folders/	0B5vErRw2KoEwRmRjMXNuN1VJS00?resourcekey=0-9kF0VqElLxC56Hu25z_2gQ&usp=sharing" class="w3-bar-item w3-button w3-theme-light w3-hover-theme" target="_blank">
+						Drive de PensActius
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <body>
 
-    <h1 class="amb-h1">PensActius Maker Space</h1>
+	<!-- Start Content -->
+	<div id="home" class="w3-content">
 
-  </body>
+		<!-- Image in Display Container -->
+		<div class="w3-padding-top-48">
+			<div class="w3-display-container">
+				<img class="w3-grayscale-min w3-opacity-min w3-card" src="images/maker.jpg" alt="Maker Space" style="width:100%">
 
+				<div class="w3-display-bottomleft w3-theme-l5 w3-padding-small w3-hide-small">
+					<h1 class="w3-jumbo">PensActius</h1>
+					<h2 class="w3-display-bottomleft w3-margin-left w3-xlarge">
+						Maker Space
+					</h2>
+				</div>
+			</div>
+		</div>
+
+		<!-- About -->
+		<div id="about" class="w3-padding-top-64">
+			<div class="w3-row">
+
+				<div class="w3-half w3-padding-large w3-hide-medium w3-hide-small">
+					<img src="images/barco.jpg" class="w3-round w3-image w3-grayscale-min" alt="Proyecto Maker" style="width:100%">
+				</div>
+
+				<div class="w3-rest w3-padding-large">
+					<h1 class="w3-center">¿Qué es PensActius?</h1><br>
+					<h5 class="w3-center">Haz realidad tus ideas</h5>
+					<p class="w3-large">PensActius es un espacio de experimentación, en el que jóvenes y adultos pueden desarrollar su creatividad y potenciar sus talentos a través de talleres tecnológicos.</p>
+
+					<p class="w3-large w3-text-grey w3-hide-small">El objetivo es estimular las ganas de descubrir, aprender y crear.</p>
+ 
+					<p class="w3-large">Combinamos nuevas tecnologías (fabricación digital, robótica, programación, etc) y técnicas tradicionales. </p>
+					
+					<p class="w3-large">
+					Trabajamos con Lego WeDo, Lego Mindstorms, Makeblock y Arduino. También disponemos de cortadora láser e impresora 3D para dar forma a tus proyectos más avanzados.</p>
+
+
+					<p class="w3-large w3-text-gray w3-center">Nuestra máxima es: "Si puedes imaginarlo, puedes hacerlo.".</p>
+					
+				</div>
+			</div>
+		</div>		
+
+		<!-- Contact -->
+		<div id="contact" class="w3-container">
+			<h1>Contact</h1>
+			<p class="w3-text-blue-grey w3-large">
+				<b>PensActius, C/Menorca 1-3-5, 1o, 2a 08243 Manresa</b></p>
+				<p>También nos puedes llamar al teléfono 670 576 199 o enviarnos un mail a pensactius@gmail.com, o déjanos un mensaje a continuación:</p>
+
+				<form action="/action_page.php" target="_blank"></form>
+				<p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+				<p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+				<p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+				<p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+				<p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+			</form>
+
+		</div>
+
+
+	<!-- End Content -->
+	</div>
+
+</body>
 </html>
+
