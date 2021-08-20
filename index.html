@@ -34,25 +34,45 @@
 		.w3-hover-theme:hover {color:#fff !important; background-color:#2e4a62 !important}
 		.w3-hover-text-theme:hover {color:#2e4a62 !important}
 		.w3-hover-border-theme:hover {border-color:#2e4a62 !important}
+
+		.link-button {
+			background-color: #172531
+			color:#fff;
+			font-size: 18px;
+			margin: auto;
+			display: block;
+			width: 200px;
+			border-radius: 25px;
+		}
 		
 	</style>
 <body>
 
 	<!-- Navigation (Sits on top) -->
 	<div class="w3-top">
-		<div class="w3-bar w3-theme-light w3-padding- w3-card">
+		<div class="w3-bar w3-theme-light w3-padding w3-card w3-large">
 			<a href="#home" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Inicio</a>
-			<a href="#talleres" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Talleres</a>
-			<a href="#actividades_ext" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Actividades Externas</a>
+
+			<div class="w3-dropdown-hover w3-mobile">
+				<button class="w3-button w3-hover-theme">Talleres</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="#talleres_anuales" class="w3-bar-item w3-button w3-theme-light w3-hover-theme">Talleres Anuales	</a>
+					<a href="https://docs.google.com/document/d/1SDkyC3JQ81dyNyN0O0DnELou0uW1M8rl2bcQkJOWkbs" class="w3-bar-item w3-button w3-theme-light w3-hover-theme" target="_blank">Curso 2021-2022</a>
+					<a href="https://docs.google.com/forms/d/1RRGmhFoobENsBuvcbwK8GZUxLJ2rT6JYphVNe14_EJE" class="w3-bar-item w3-button w3-theme-light w3-hover-theme" target="_blank">Formulario de Inscripción</a>
+				</div>				
+			</div>
+
+			<a href="#actividades_ext" class="w3-bar-item w3-button w3-mobile w3-hover-theme w3-tooltip">Actividades Externas
 			<a href="#fablab" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Espacio Fablab</a>
 			<a href="#contact" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Contacto</a>
+
 			<div class="w3-dropdown-hover w3-right w3-mobile">
 				<button class="w3-button w3-hover-theme">Recursos</button>	
 				<div class="w3-dropdown-content w3-bar-block w3-card-4" style="right:0">
 					<a href="https://github.com/pensactius/tutoriales" class="w3-bar-item w3-button w3-theme-light w3-hover-theme" target="_blank">
 						Tutoriales en Github
 					</a>
-					<a href="https://www.youtube.com/channel/UCIXZ1Khrw78XszPj-PbuC5g" class="w3-bar-item w3-button w3-theme-light w3-hover-theme"target="_blank">
+					<a href="https://www.youtube.com/channel/UCIXZ1Khrw78XszPj-PbuC5g" class="w3-bar-item w3-button w3-theme-light w3-hover-theme" target="_blank">
 						Youtube
 					</a>
 					<a href="https://drive.google.com/drive/folders/	0B5vErRw2KoEwRmRjMXNuN1VJS00?resourcekey=0-9kF0VqElLxC56Hu25z_2gQ&usp=sharing" class="w3-bar-item w3-button w3-theme-light w3-hover-theme" target="_blank">
@@ -72,13 +92,6 @@
 			<div class="w3-display-container">
 				<img class="w3-grayscale-min w3-opacity-min w3-hide-small" src="images/maker.jpg" alt="Maker Space" style="width:100%">
 
-				<!-- Logo Text -->
-				<!--<div class="w3-display-bottomleft w3-theme-l5 w3-padding-small w3-hide-small">
-					<h1 class="w3-jumbo">PensActius</h1>
-					<h2 class="w3-display-bottomleft w3-margin-left w3-xlarge">
-						Maker Space
-					</h2>
-				</div>-->
 				<div class="w3-display-middle" style="white-space: nowrap;">
 					<span class="w3-round-small w3-center w3-padding-large w3-theme-dark w3-xlarge w3-wide w3-animate-opacity">PensActius Maker Space</span>
 				</div>
@@ -113,8 +126,8 @@
 			</div>
 		</div>
 
-		<!-- Talleres -->
-		<div id="talleres" class="w3-row w3-padding-64">
+		<!-- Talleres Anuales -->
+		<div id="talleres_anuales" class="w3-row w3-padding-64">
 			<div class="w3-col l6 w3-padding-large w3-large">
 				<h1 class="w3-center">TALLERES ANUALES</h1>
 
@@ -122,12 +135,7 @@
 
 				<p class="w3-theme-l4 w3-padding-large">Los <em>talleres dirigidos</em> están orientados a enseñar una disciplina determinada como programación, electrónica o impresión 3D. Estos talleres son ideales si estás interesado en profundizar conocimientos de alguna o varias de las materias que impartimos. </p>
 
-				<p>En esta categoría se encuentran los siguientes talleres:</p>
-	 			<ul class="w3-leftbar w3-border-teal" style="list-style-type: none">
-	 				<li>Robótica Educativa</li>
-	 				<li>Programación de Videojuegos</li>
-	 				<li>Robótica con Arduino</li>
-	 			</ul>
+				<a style="position:relative;overflow:visible;margin-bottom:1px;" href="https://docs.google.com/document/d/1SDkyC3JQ81dyNyN0O0DnELou0uW1M8rl2bcQkJOWkbs" class="w3-button link-button w3-theme-d2 w3-hover-theme" title="mas_info" target="_blank">+ Información</a>
  			</div>
 
  			<div class="w3-col l6 w3-padding-large">
@@ -138,14 +146,7 @@
  			<div class="w3-col l6 w3-large">
 				<p>Por el contrario si lo que te interesa es experimentar con diferentes disciplinas como la impresión 3D, corte láser o cualquier proyecto tecnológico que tengas en mente, el taller Maker es la elección más adecuada. 
 				<p class="w3-theme-l4 w3-padding-large">Los <em>Talleres Maker</em>son completamente libres y te permiten experimentar con cualquiera de las disciplinas y/o herramientas que disponemos en PensActius</p>
-				<p>Algunos ejemplos de las disciplinas/herramientas que trabajamos:</p>
-				<ul class="w3-leftbar w3-border-teal" style="list-style-type: none">
-	 				<li>Corte laser</li>
-	 				<li>Impresión 3D</li>
-	 				<li>Lego WeDo y Lego Mindstorms</li>
-	 				<li>Programación de Videojuegos</li>
-	 				<li>Programación con Arduino</li>
-	 			</ul>
+				<a style="position:relative;overflow:visible;margin-bottom:1px;" href="https://docs.google.com/document/d/1SDkyC3JQ81dyNyN0O0DnELou0uW1M8rl2bcQkJOWkbs" class="w3-button link-button w3-theme-d2 w3-hover-theme" title="mas_info" target="_blank">+ Información</a>
 	 		</div>
 
 	 		 <div class="w3-col l6 w3-padding-large">
