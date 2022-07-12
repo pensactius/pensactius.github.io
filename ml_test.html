@@ -35,9 +35,9 @@
         const flip = true; // whether to flip the webcam
         webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
         
-        const devices = await navigator.mediaDevices.enumerateDevices()
+        //const devices = await navigator.mediaDevices.enumerateDevices()
         
-        await webcam.setup({ deviceId: devices[1].deviceId }); // request access to the webcam
+        await webcam.setup({ facingMode: "environment" }); // request access to the webcam
         
         await webcam.play();
         window.requestAnimationFrame(loop);
